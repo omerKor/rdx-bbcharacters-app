@@ -1,7 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import About from './components/About';
-import Blog from './components/Blog';
-import Layout from './theme/Layout';
+import { Routes, Route } from 'react-router-dom'
 
 //Pages
 import Home from './pages/Home';
@@ -10,15 +7,9 @@ import Home from './pages/Home';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<Layout />}>
-          <Route path="" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="" element={<Home />} />
+    </Routes>
   );
 };
 
