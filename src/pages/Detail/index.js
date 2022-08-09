@@ -30,7 +30,7 @@ function Detail() {
                 )
             }
             <pre>
-                <div style={{ width: "50%", whiteSpace: "break-spaces" }}>
+                <div>
                     {
                         char && (
                             JSON.stringify(char, null, 2)

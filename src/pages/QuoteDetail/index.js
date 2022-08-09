@@ -26,6 +26,15 @@ function QuoteDetail() {
                     </>
                 )
             }
+            <pre>
+                <div>
+                    {
+                        quote && (
+                            JSON.stringify(quote, null, 2)
+                        )
+                    }
+                </div>
+            </pre >
         </div >
     )
 }
