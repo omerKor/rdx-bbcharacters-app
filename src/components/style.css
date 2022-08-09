@@ -1,0 +1,25 @@
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #d3d3d3;
+}
+nav ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	padding-left: 0;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+nav ul li a {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	text-decoration: none;
+}
