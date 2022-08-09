@@ -15,6 +15,11 @@ function QuoteDetail() {
             .then(data => setQuote(data[0]));
     }, [quote_id])
 
+
+    if (!quote) {
+        return <redirect to="/quote" />;
+    }
+
     return (
         <div>
             {

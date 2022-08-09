@@ -58,7 +58,7 @@ function Home() {
             <div className='more__Button'>
                 {
                     hasNextPage && (
-                        <button disabled={status} onClick={() => dispatch(fetchCharacters(page))}>{status === 'loading' && <Loading />}{status !== 'loading' && 'Load More...'}</button>
+                        <button onClick={() => dispatch(fetchCharacters(page))}>{status === 'loading' && <Loading />}{status !== 'loading' && 'Load More...'}</button>
                     )
                 }
                 {
